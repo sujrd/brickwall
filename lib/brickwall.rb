@@ -1,3 +1,9 @@
+require 'digest'
+require 'openssl'
+require 'json'
+
+require 'rest-client'
+
 module Brickwall
   class << self
     attr_writer :configuration
@@ -13,7 +19,8 @@ module Brickwall
 
   class Configuration
     attr_accessor :brick_public_key, :brick_private_key,
-                  :widget_project_key, :widget_secret_key
+                  :widget_project_key, :widget_secret_key,
+                  :application_domain
 
     def configured?
       present?(brick_public_key) &&
@@ -31,3 +38,6 @@ module Brickwall
 end
 
 require 'brickwall/version'
+require 'brickwall/pingback'
+require 'brickwall/signature'
+require 'brickwall/api'

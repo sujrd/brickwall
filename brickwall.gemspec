@@ -14,4 +14,6 @@ Gem::Specification.new do |s|
   s.files         = `git ls-files -z`.split("\x0")
   s.require_paths = %w(lib)
   s.license       = 'MIT'
+
+  s.add_dependency 'rest-client', '~> 1.8'
 end
