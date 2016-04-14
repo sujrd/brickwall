@@ -1,5 +1,8 @@
 # brickwall
 
+[![Code Climate](https://codeclimate.com/github/sujrd/brickwall/badges/gpa.svg)](https://codeclimate.com/github/sujrd/brickwall)
+[![Gem Version](http://img.shields.io/gem/v/brickwall.svg)](https://rubygems.org/gems/brickwall)
+
 Unofficial Paymentwall Brick API wrapper Ruby gem.
 
 ## Installation
